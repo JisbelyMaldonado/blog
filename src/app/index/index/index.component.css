@@ -1,0 +1,976 @@
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+      format("opentype"),
+    url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Made Tommy Personal";
+  src: url("/../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")
+      format("opentype"),
+    url("/../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: "Geomanist Bold";
+  src: url("/../../assets/fonts/Geomanist-Bold.otf")
+      format("opentype"),
+    url("/../../assets/fonts/Geomanist-Bold.otf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Made Tommy Personal BOLD";
+  src: url("/../../assets/fonts/MADETOMMYBold_PERSONAL_USE")
+      format("opentype"),
+    url("/../../assets/fonts/MADETOMMYBold_PERSONAL_USE")
+    format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: "Geomanist light";
+  src: url("/../../assets/fonts/Geomanist-Light.otf")
+      format("opentype"),
+    url("/../../assets/fonts/Geomanist-Light.otf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Made Tommy Personal";
+  src: url("/../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")
+      format("opentype"),
+    url("/../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.title-reserva{
+  font-family: "Caviar Dreams";
+  color:#864D7D;
+  size:25px;
+  font-weight: bold;
+}
+
+.btn-send-message{
+    background-color: #9CC1C8;
+    border-radius: 14px}
+
+.btn-cancel-message{
+    background-color: #864D7D;
+    border-radius: 14px
+}
+
+  .sesion-contact {
+    background-color: white;
+  }
+  .row-contact {
+    background: white;
+    max-width:700px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    background-image: url("../../../assets/img/Icono-Inspira.svg");
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 120px 200px;
+    box-shadow: 4px 9px 10px 0px rgba(168,168,168,1);
+    border-bottom-right-radius: 50px;
+  }
+
+  .row-servicios {
+    background: white;
+    max-width:100%;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 4px 9px 10px 0px rgba(168,168,168,1);
+    border-bottom-right-radius: 50px;
+  }
+  
+  .img-title-contact {
+    width: 200px;
+    /* margin-top: 200px; */
+  }
+  .content-form {
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .input-contact {
+    background-color: #f6f6f6;
+    border: 1px solid rgb(53, 44, 176);
+    font-family: "GOTHIC", "arial", sans-serif !important;
+  }
+  .btn-send-message {
+    background-color: #e83f3f;
+    border-radius: 0px 0px 0px 13px;
+    -moz-border-radius: 0px 0px 0px 13px;
+    -webkit-border-radius: 0px 0px 0px 13px;
+  }
+  .btn-cancel-message {
+    background-color: #1bb3cc;
+    border-radius: 0px 0px 13px 0px;
+    -moz-border-radius: 0px 0px 13px 0px;
+    -webkit-border-radius: 0px 0px 13px 0px;
+  }
+
+  .img-personal-care {
+    max-width: 200%;
+  }
+
+  .logo-home {
+    padding-top: 10%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 6%;
+  }
+
+  .logos-size {
+    padding-top: 10%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .iconsSocial {
+    padding-top: 2%;
+  }
+
+  .color-text {
+    color: rgb(204, 51, 51) !important;
+  }
+
+  .row-div-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .panelFrase3 {
+    background-image: url("/../../assets/img/Banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 62% 100%;
+  }
+
+  .panelFrase4 {
+    background-image: url("/../../assets/img/Banner-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .card-img-frase4 {
+    padding:5%;
+    padding-right:0% !important;
+    width:65%;
+  }
+
+    
+  .tree {
+    width: 500px;
+    margin: 0 auto;
+    /* margin-bottom: 3rem; */
+  }
+
+  
+  
+  .tree1 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .card-terapia{
+    width: 75%;
+  }
+  .row-w-100 {
+    max-width: 100%;
+  }
+
+  .card-img-frase3 {
+    padding:5%;
+    padding-right:0% !important;
+    width: 70%;
+  }
+  .panelFrase3 {
+    background-image: url("/../../assets/img/Banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 62% 100%;
+    /* background-size: 62%;
+    background-position: left;
+    margin-left: 0;
+    margin-bottom: 10%; */
+  }
+    .logos{
+      padding-top:10%;
+      max-width: 50px;
+    }
+
+    .logo-presea{
+      padding-left:8%; 
+    }
+    .l-presea {
+      width: 40px;
+    }
+/******ESTILOSSSSSSSSS SKY******/
+
+.content-img-banner-2{
+  background-image: url("../../../assets/img/Banner-2.1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 510px;
+  /* border: solid 3px black; */
+}
+
+.content-img-banner-1{
+  background-image: url("../../../assets/img/Banner-1-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 510px;
+  /* border: solid 3px black; */
+}
+
+
+
+    .content-img-init{
+      background-image: url("../../../assets/img/Fondo-Inicio.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      min-height: 510px;
+    }
+    .content-img-izq{
+      background-image: url("../../../assets/img/Ilustracion1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      max-height: 450px;
+    }
+
+    .content-img-banner2{
+      background-image: url("../../../assets/img/Banner-2-2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80% 100%;
+    }
+
+    .display-row-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+    .display-col-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+    .logo-img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .frase4-img {
+      width: 500px;
+      height: 500px;
+    }
+
+    .frase3-img {
+      width: 420px;
+      height: 500px;
+    }
+
+    .opening-phrase {
+      width: 300px;
+      height: 200px;
+    }
+    .line-colors{
+      min-height: 10px;
+      max-width: 100%;
+    }
+
+    .no-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+
+    }
+
+    .no-padding {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+/*-----------------------------------*/
+  .personal-dates{
+    padding:5%;    
+  }
+
+  .card{
+    background-color: #f6f6f6;
+  }
+
+  .logos{
+    padding-top:5%;
+    max-width: 60px;
+  }
+
+
+  .size-card{
+    height: 83%;
+  }
+
+  .size-card-info{
+      background-color: #f6f6f6;
+      -webkit-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+      -moz-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+      box-shadow: 15px 20px 14px -19px rgba(120,118,120,1); 
+  }
+
+  .size-card-info2{
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+    -moz-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+    box-shadow: 15px 20px 14px -19px rgba(120,118,120,1); 
+}
+
+
+    .pannels200 {
+      background-image: url("/../../assets/img/Frase 3.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: right;
+      margin-right: 0;
+      margin-bottom: 10%;
+      width: 100%;
+      height:auto;
+      /* height: 100vh; */
+      z-index: 25000
+    }
+    .card-img-frase3 {
+      padding:5%;
+      padding-right:0% !important;
+      width: 70%;
+    }
+
+    .card-img-frase4 {
+      padding:5%;
+      padding-right:0% !important;
+      width:65%;
+    }
+
+
+    .panelFrase3 {
+      background-image: url("/../../assets/img/Banner-1.jpg");
+      background-repeat: no-repeat;
+      background-size: 62% 100%;
+      /* background-size: 62%;
+      background-position: left;
+      margin-left: 0;
+      margin-bottom: 10%; */
+    }
+
+    .panelFrase4 {
+      background-image: url("/../../assets/img/Banner-2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+
+      min-height:40vh;
+      /* background-size: 62%;
+      background-position: left;
+      margin-left: 0;
+      margin-bottom: 10%; */
+    }
+
+    .panelServicios {
+      background-image: url("/../../assets/img/Fondo Abajo.svg");
+      background-repeat: no-repeat;
+      background-size: 62% 100%;
+      background-position: right;
+
+    }
+    
+    .card-terapia{
+      width: 75%;
+    }
+
+    .terapia-online{
+      background-color: #864D7D;
+  
+    }
+
+    .atencion-online{
+      background-color: #9cc1c8;
+  
+    }
+
+
+    .terapia-online-title{
+      color:white;
+      font-family: "Geomanist Bold";
+      font-size:30px;
+      text-align:center;
+      margin-left:30%
+    }
+
+    .linea-azul{
+      background-color: #9cc1c8;
+    }
+
+    .img-contact{
+      width: 150px;
+    }
+
+    .container-plant {
+      background-image: url("../../../assets/img/FondoArriba.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 200px 400px;
+      min-height: 300px;
+    }
+
+    .content-inspira{
+      min-height: 540px;
+    }
+
+    .content-img-inspira{
+      width: 400px;
+    }
+
+    .what-is-inspira {
+      background-image: url("../../../assets/img/Queesinspira.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 250px;
+      box-shadow: 6px 3px 18px -4px rgba(87,85,87,1);
+      z-index: 2;
+    }
+
+    .text-inspira-content {
+      background-color: #ffff;
+      border-bottom-right-radius: 50px;
+      min-height: 239px;
+      box-shadow: 4px 7px 17px -4px rgba(87,85,87,1);
+
+    }
+
+    .text-inspira {
+      font-family: "Made Tommy Personal" ;
+      font-size: 16px;
+      line-height: 15px;
+      text-align: justify;
+      color: #333333;
+    }
+
+
+    .text-clinic-atention{
+      font-family: "Made Tommy Personal" ;
+      font-size: 16px;
+      line-height: 15px;
+      text-align: justify;
+      color: rgb(129, 127, 127);
+    }
+
+    .text-personal-dates {
+      font-family: "Made Tommy Personal" ;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: justify;
+      color: #333333;
+    }
+
+
+    .text-bold {
+      font-family: "Made Tommy Personal" ;
+      font-size: 17px;
+      line-height: 15px;
+      text-align: justify;
+      font-weight: bold;
+      color: black;
+    }
+    .servicios-logo-lateral {
+      width: 325px !important;
+      position: absolute;
+      left: -115px !important;
+      top: -100px;
+
+    }
+    .btn-reservation {
+      width: 150px; 
+      padding-top:20px
+    }
+    .service {
+      margin-top: 30px;
+      width: 250px;
+    }
+    @media (max-width: 769px) {
+      .text-inspira-atention{
+        padding-right:5% !important;
+        padding-left: 10% !important;
+        }
+
+      .text-terapia{
+        padding-top:5% !important;
+      }
+      
+      .logo-presea{
+        padding-left:8%;
+        max-width: 95px;
+      }
+
+      .frase4-img {
+        width: 300px;
+        height: auto;
+      }
+
+      .frase3-img {
+        width: 200px;
+        height: auto;
+      }
+    
+      .content-img-init {
+        min-height: 400px;
+        padding: 0px !important;
+      }
+
+      .logo-img  {
+        width: 190px;
+        height: 180px;
+      }
+      .opening-phrase {
+        width: 280px;
+        height: 180px;
+      }
+      .container-plant {
+        display: none;
+      }
+      .tree {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    
+      .tree1 {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
+    
+      .logos-size {
+        padding-top: 10%;
+        /* padding-left: 10%; */
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    
+     
+      .terapia-online-title{
+        color:white;
+        font-family: "Geomanist Bold";
+        font-size:30px;
+        text-align:center;
+        margin-left:0%
+      }
+      .servicios-logo-lateral {
+        width: 350px ;
+        position: relative;
+        left: -50% !important;
+      }
+    }
+    @media (max-width: 576px) {
+
+      .text-inspira-atention{
+      padding-right:0px !important;
+      padding-left: 0px !important;
+      }
+
+      .text-terapia{
+        padding-top:5% !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+
+      }
+
+      .logo-presea{
+        padding-left:8%;
+        max-width: 95px;
+      }
+
+      .content-img-init{
+        min-height: max-content;
+      }
+
+      .frase4-img {
+        width: 350px !important;
+        height: auto;
+      }
+      .frase3-img {
+        width: 300px !important;
+        height: auto;
+      }
+
+      .logo-img  {
+        width: 120px;
+        height: 120px;
+      }
+      .opening-phrase {
+        width: 160px;
+        height: 100px;
+      }
+      .col-6-content-izq{
+        max-height: 300px;
+      }
+      .content-img-izq{
+        max-height: 300px;
+      }
+      .content-img-banner2{
+        max-height: 300px;
+      }
+      .row-contact {
+        padding-top: 2rem;
+        background-image: none;
+
+      }
+      .content-form {
+        padding-top: 1rem;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .img-contact{
+        width: 120px;
+      }
+      .content-img-inspira {
+        width: 250px;
+      }
+      .what-is-inspira {
+        box-shadow: -1px 10px 18px -4px rgba(87,85,87,1);
+        max-width: 300px;
+      }
+      .text-inspira-content {
+        box-shadow: 3px 7px 18px -4px rgba(87,85,87,1);
+        max-width: 300px;
+      }
+      .text-inspira {
+        font-size: 13px;
+      }
+      .text-bold {
+        font-size: 14px;
+
+      }
+      .content-inspira {
+        padding-bottom: 40px;
+      }
+      
+      .servicios-logo-lateral {
+        width: 220px !important;
+      }
+      .img-about {
+        width: 260px !important;
+      }
+      .tree {
+        width: 300px !important;
+      }
+    }
+
+    @media (max-width: 869px) {
+      .text-inspira-atention{
+        padding-right:5% ;
+        padding-left: 10% ;
+        }
+
+        .text-terapia{
+          padding-top:5% !important;
+          padding-right:5% ;
+        padding-left: 10% ;
+        }
+
+      .container-plant {
+        display: none;
+      }
+
+      .logo-presea{
+        padding-left:8%;
+        max-width: 85px;
+      }
+      .img-about {
+        width: 300px !important;
+      }
+     
+
+    }
+/******FINNNNN ESTILOSSSSSSSSS SKY******/
+
+/**SERVICIOS***/
+@media (max-width: 769px) {
+  .frase4-img {
+    width: 400px;
+    height: auto;
+  } 
+
+  .frase3-img {
+    width: 300px;
+    height: auto;
+  } 
+
+  .quienes-somos-logo {
+    width: 30% !important;
+    margin-top: 5px !important;
+  }
+  .img-logo {
+    min-width: 120px;
+  }
+  .div-container-regalos {
+    /* background-image: url("../../assets/img/banner1.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 50vh;
+  }
+  .text-present {
+    width: 260px;
+  }
+  .row-dimension-col-quienes-somos {
+    width: 80% !important;
+  }
+  .circulos-logos-quienes-somos {
+    width: 100% !important;
+    z-index: 2000;
+    position: absolute;
+    top: -150px !important;
+    left: -3px;
+  }
+  .padding-col-quienes-somos {
+    padding-top: 20rem !important;
+  }
+  .padding-col-quienes-somos-ancho {
+    padding: 1rem !important;
+  }
+   .padding-text-quienes-somos{
+    padding-left: 65px !important; 
+     padding-right: 5px !important; 
+   /* padding-bottom: 10px !important; */
+  }
+  .div-container-offer-product {
+    margin-top: 15px;
+  }
+
+  .servicios-logo-lateral {
+    width: 250px !important;
+    position: relative;
+    left: -50% !important;
+  }
+}
+
+.servicios-logo-lateral {
+  width: 325px !important;
+  position: absolute;
+  left: -115px !important;
+  top: -100px;
+
+}
+
+.phrases{
+  max-width: 100%;
+  }
+
+  @media (max-width: 992px) {
+
+  .frase4-img {
+    width: 450px;
+    height: auto;
+  } 
+
+  .frase3-img {
+    width: 450px;
+    height: auto;
+  } 
+  .phrases{
+    max-width: 85%;
+  }
+
+
+  .tree1 {
+    display:none
+  }
+
+  .logos-size {
+    padding-top: 10%;
+    /* padding-left: 10%; */
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+
+  .img-about {
+    width: 400px;
+  }
+  .servicios-logo-lateral {
+   width: 225px !important;
+   position: relative;
+    /* border: 3px solid #000; */
+    left: 0px !important;
+    margin-top: 20px;
+    top: 20px;
+  }
+
+  .terapia-online-title{
+    color:white;
+    font-family: "Geomanist Bold";
+    font-size:30px;
+    text-align:center;
+    margin-left:0%
+  }
+  .servicios-logo-lateral {
+    width: 200px ;
+    position: relative;
+     /* border: 3px solid #000; */
+     left: 0px !important;
+     margin-top: 20px;
+     top: 20px;
+   }
+   .content-img-face {
+     padding-left: 0px;
+   }
+   .img-face {
+    display: none;
+  }
+   .display-none {
+     display: none;
+   }
+   .container-plant-services {
+     background: none !important;
+   }
+   .tree {
+    width: 400px;
+  }
+  }
+
+.view-more{
+  color: #7087AF;
+  float: right;
+}
+.div-bg-grey {
+  border-bottom-right-radius: 90px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+  -moz-box-shadow: 15px 20px 14px -19px rgba(120,118,120,1);
+  box-shadow: 15px 20px 14px -19px rgba(120,118,120,1); 
+}
+
+.div-content-bar-gray {
+  background-color: #9CC1C8;
+  min-height: 8px;
+}
+
+.div-content-bar-purple {
+  background-color: #864D7D;
+  min-height: 8px;
+}
+
+.div-content-bar-green {
+  margin-top: 3% ;
+  margin-bottom: 1% ;
+  background-color: #BEDBC3;
+  max-height: 2px;
+  width: 90%;
+  align-content:center;
+  min-height: 2px;
+}
+
+.text-content-michelle{
+  font-family: "Geomanist light";
+}
+
+.background-tree-left {
+  background-image: url("/../../assets/img/Fondo Izquierdo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.border-presea{
+    border-left: solid 3px #BEDBC3; 
+    
+}
+
+.container-plant-services {
+  background-image: url("../../../assets/img/Fondo Abajo.svg");
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 200px 400px;
+  min-height: 300px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 0 auto;
+}
+
+.view-more{
+  font-family: "Made Tommy Personal";
+  float: right;
+  color:#758bb2;
+  font-weight: bold;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.view-more-services{
+  font-family: "Made Tommy Personal";
+  float: right;
+  color:#758bb2;
+  font-weight: bold;
+  padding-right:5%
+}
+
+.text-inspira-atention{
+  font-family: "Made Tommy Personal" ;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+  color: #333333;
+}
+
+.text-terapia{
+  font-family: "Made Tommy Personal" ;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: justify;
+  color: #333333;
+}
+
+.img-face {
+  width: 90px;
+}
+
+.content-img-face {
+  padding-left:120px !important; 
+  padding-right:0px !important;
+}
+
+li > .psico-title{
+  font-weight: bold;
+  color: #864D7D;
+}
+
+
+

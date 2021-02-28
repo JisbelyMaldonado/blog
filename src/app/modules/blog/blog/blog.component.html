@@ -1,0 +1,209 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card card-stats">
+      <div class="display-row-end">
+        <div class="col-sm-4 text-right">
+          <button type="button" class="btn btn-info btn-fill btn-block" (click)="newPost()" data-toggle="modal"
+            data-target="#modalPost">
+            <i class="fa fa-plus"></i>&nbsp; Nuevo post
+          </button>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <hr>
+          <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4">
+              <div class="container">
+                <mat-form-field>
+                  <mat-label>Buscar</mat-label>
+                  <input matInput (keyup)="applyFilter($event)" placeholder="Buscar" #input>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 ml-auto mr-auto text-center">
+              <div class="container" style="min-width: 100%;">
+                <mat-table #table [dataSource]="dataSource">
+                  <ng-container matColumnDef="Nº">
+                    <mat-header-cell *matHeaderCellDef class="text-center">Nº</mat-header-cell>
+                    <mat-cell *matCellDef="let row"> <span class="span-order">{{row.post_id |
+                        slice:8}}</span>
+                    </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Titulo">
+                    <mat-header-cell *matHeaderCellDef class="text-center"> Título </mat-header-cell>
+                    <mat-cell *matCellDef="let row" class="text-center"> <span>{{row.post_title}}</span>
+                    </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Subtitulo">
+                    <mat-header-cell *matHeaderCellDef class="text-center"> Subtítulo </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> <span>{{row.post_subtitle}}</span> </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Fecha">
+                    <mat-header-cell *matHeaderCellDef class="text-center"> Fecha </mat-header-cell>
+                    <mat-cell *matCellDef="let row" class="text-center">
+                      <span>{{row.post_date}} </span>
+                    </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Editar">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Editar
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" class="text-center">
+                    <button type="button" data-toggle="modal"
+                    data-target="#modalPost"  (click)="selectPost(row)" class="btn btn-info text-center btn-sm"><span class="material-icons">
+                      create
+                      </span></button>
+                    </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Eliminar">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Eliminar
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" class="text-center">
+                      <button  (click)="deletePost(row.post_id)" type="button" class="btn btn-danger text-center btn-sm" ><span class="material-icons">
+                        delete_sweep
+                        </span></button>
+                      
+                      </mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="Compartir">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Copiar enlace
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" class="text-center">
+                      <button  (click)="copyLink(row.post_id)" type="button" class="btn  text-center btn-sm btn-copy" ><span class="material-icons">
+                        content_copy
+                        </span></button>
+                      
+                      </mat-cell>
+                  </ng-container>
+                  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                  <mat-row class="element-row" *matRowDef="let row; columns: displayedColumns;">
+                  </mat-row>
+                </mat-table>
+                <mat-paginator #tablePost [pageSizeOptions]="[5,10, 25, 100]"></mat-paginator>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal post -->
+
+<div 
+class="modal fade bd-example-modal-lg mx-auto no-padding" id="modalPost" tabindex="-1" role="dialog"
+    aria-labelledby="modalPostLabelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-width" role="document">
+    <div class="modal-content">
+     <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button> &nbsp;
+        <h4 class="modal-title" id="modalPostLabel">{{isEdit?'Editar post':'Nuevo post'}}</h4>
+      </div>  -->
+       <div class="modal-header">
+        <h5 class="modal-title">{{isEdit?'Editar post':'Nuevo post'}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="modal-body">
+        <form #formPost="ngForm" action="" class="form-horizontal" (ngSubmit)='addPost(formPost.value, formPost.valid)'
+          novalidate action="/" method="get">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="post_id">ID</label>
+                  <input style="font-size: 10px;" type="text" readonly class="form-control" name="post_id" id="post_id"
+                    placeholder="ID" [(ngModel)]="post.post_id" #post_id="ngModel" required pattern="">
+                  <small [hidden]="post_id.valid || (post_id.pristine && !formPost.submitted)" class="text-danger">
+                    Obligatorio
+                  </small>
+                </div>
+                <div class="col-sm-4">
+                  <label for="post_title">Título</label>
+                  <input type="text" class="form-control" name="post_title" id="post_title"
+                    placeholder="Título del post" [(ngModel)]="post.post_title" #post_title="ngModel" required
+                    pattern="">
+                  <small [hidden]="post_title.valid || (post_title.pristine && !formPost.submitted)"
+                    class="text-danger">
+                    Obligatorio
+                  </small>
+                </div>
+                <div class="col-sm-3">
+                  <label for="post_subtitle">Subtítulo</label>
+                  <input required type="text" class="form-control" name="post_subtitle" id="post_subtitle"
+                    placeholder="Subtítulo del post" [(ngModel)]="post.post_subtitle" #post_subtitle="ngModel"
+                    pattern="">
+                </div>
+               
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12">
+                  <label for="post_description">Descripción</label>
+                   <angular-editor [disabled]='true' name="post_description" id="post_description"
+                    #post_description="ngModel" [placeholder]="'Enter text here...'"
+                    [(ngModel)]="post.post_description"></angular-editor> 
+
+                  <!-- <textarea type="text" class="form-control" name="post_description" id="post_description"
+                      placeholder="Descripción del post" [(ngModel)]="post.post_description" #post_description="ngModel"
+                      required pattern=""></textarea>
+                    <span style="float: right;" *ngIf="post.post_description">{{post.post_description.length}}
+                      / 200
+                    </span> -->
+
+                  <!-- <small [hidden]="post_description.valid || (post_description.pristine && !formPost.submitted)"
+                      class="text-danger">
+                      Obligatorio
+                    </small> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <figure class="pt-5">
+                    <img class="img-post-modal" *ngIf="!post.post_img && !imageSrc"
+                      src="../../../../assets/img/descarga.png">
+                    <img class="img-post-modal" *ngIf="post.post_img && imageSrc " [src]="post.post_img">
+                    <img class="img-post-modal" *ngIf="post.post_img && !imageSrc" [src]="post.post_img">
+                    <img class="img-post-modal" *ngIf="!post.post_img && imageSrc" [src]="post.post_img">
+                  </figure>
+                  <input id=id type="file" class="form-control" name="post_img" accept="image/*"
+                    (change)="onChangeImage($event)" required>
+                  <input type="hidden" class="form-control" name="post_img" id="post_img" placeholder="Imagen del post"
+                    [(ngModel)]="post.post_img" #post_img="ngModel" required pattern="">
+                  <small [hidden]="post_img.valid || (post_img.pristine && !formPost.submitted)" class="text-danger">
+                    Obligatorio
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <button [disabled]='!formPost.valid' type="submit" class="btn btn-fill btn-success btn-wd">
+                <i *ngIf="isEdit" class="fa fa-edit"></i> 
+                <i *ngIf="!isEdit" class="fa fa-save"></i>
+                 &nbsp; {{isEdit?'Editar':'Agregar'}}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

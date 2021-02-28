@@ -1,0 +1,141 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+              <hr>
+              <div class="row">
+                <div class="col-sm-8"></div>
+                <div class="col-sm-4">
+                  <div class="container">
+                    <mat-form-field>
+                      <mat-label>Buscar</mat-label>
+                      <input matInput (keyup)="applyFilter($event)" placeholder="Buscar" #input>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 ml-auto mr-auto text-center">
+                  <div class="container" style="min-width: 100%;">
+                    <mat-table #table [dataSource]="dataSource">
+                      <ng-container matColumnDef="Nº">
+                        <mat-header-cell *matHeaderCellDef class="text-center">Nº</mat-header-cell>
+                        <mat-cell *matCellDef="let row"> <span class="span-order">{{row.message_id |
+                            slice:8}}</span>
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Fecha">
+                        <mat-header-cell *matHeaderCellDef class="text-center"> Fecha </mat-header-cell>
+                        <mat-cell *matCellDef="let row" class="text-center"> <span>{{row.message_date}}</span>
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Hora">
+                        <mat-header-cell *matHeaderCellDef class="text-center"> Hora </mat-header-cell>
+                        <mat-cell *matCellDef="let row"> <span>{{row.message_time}}</span> </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Email">
+                        <mat-header-cell *matHeaderCellDef class="text-center"> Email </mat-header-cell>
+                        <mat-cell *matCellDef="let row" class="text-center">
+                          <span>{{row.message_email}} </span>
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Nombre">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Nombre
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" class="text-center">
+                          <span>  {{row.message_name}}</span>
+                        
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Teléfono">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Teléfono
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" class="text-center">
+                          <span>  {{row.message_phone}}</span>
+                        
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Ver">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="text-center"> Ver
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" class="text-center">
+                          <span (click)="viewMessage(row)" class="material-icons cursor-pointer icon-eye " data-toggle="modal"
+                          data-target="#modalMessage">
+                            visibility
+                            </span>
+                        
+                        </mat-cell>
+                      </ng-container>
+
+                      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                      <mat-row class="element-row" *matRowDef="let row; columns: displayedColumns;">
+                      </mat-row>
+                    </mat-table>
+                    <mat-paginator #tablePost [pageSizeOptions]="[5,10, 25, 100]"></mat-paginator>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modalMessage">
+  <div class="modal-dialog modal-width" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Mensaje</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <div class="text-center row">
+          <table id="cart" class="table table-hover table-condensed table-bordered">
+            <tbody>
+                <tr>
+                    <td class="">
+                        Nº: {{message.message_id |
+                          slice:8}}
+                    </td>
+                    <td class="">
+                        Fecha: {{message.message_date}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        Hora: {{message.message_time}}
+                    </td>
+                    <td class="">
+                        Email: {{message.message_email}}
+                    </td>
+                </tr>
+                <tr>
+                  <td class="">
+                      Nombre: {{message.message_name}}
+                  </td>
+                  <td class="">
+                      Teléfono: {{message.message_phone}}
+                  </td>
+              </tr>
+              
+             
+            </tbody>
+        </table>
+        <hr>
+        <div class="row">
+          <span class="text-center pl-5 pr-5 pt-3"> Mensaje : {{message.message_description}}</span>
+        </div>
+        <hr>
+         
+        </div>   
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>

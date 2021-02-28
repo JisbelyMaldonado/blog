@@ -1,0 +1,51 @@
+<div class="modal fade bd-example-modal-lg mx-auto no-padding" id="modalLogin" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg  mx-auto  display-column-center  no-padding" style="min-height: 80vh;">
+        <div class="modal-content bb  content-form-modal mx-auto display-column-center  mx-auto  no-padding">
+            <form #loginForm="ngForm" novalidate (ngSubmit)="onLogin(loginForm.value, loginForm.valid)"
+                class="form-content display-column-center ">
+                <span class="title-login text-center "> INGRESAR</span>
+                <div class="content display-column-center  mt-3 ">
+                    <div class="form-group div-form">
+                        <div class="input-group  input-form">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"> <img
+                                        src="../../../assets/img/mail.svg" class="img-input" alt="Pass"></span>
+                            </div>
+                            <input type="email" placeholder="EMAIL" type="text" class="form-control"
+                                aria-label="Username" name="email" [(ngModel)]="user.user_email" required
+                                #email="ngModel" aria-describedby="basic-addon1"
+                                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+                        </div>
+                        <small [hidden]="email.valid || (email.pristine && !loginForm.submitted)" class="text-danger">
+                            Email inválido.
+                        </small>
+                    </div>
+                    <div class="form-group div-form">
+                        <div class="input-group  input-form">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <img src="../../../assets/img/contrasena.svg" class="img-input " alt="Pass"></span>
+                            </div>
+                            <input type="password" placeholder="CONTRASEÑA" class="form-control" aria-label="Username"
+                                name="password" [(ngModel)]="user.user_password" required minlength="6"
+                                #password="ngModel">
+                        </div>
+                        <small [hidden]="password.valid || (password.pristine && !loginForm.submitted)"
+                            class="text-danger">
+                            ingrese contraseña.
+                        </small>
+                    </div>
+                </div>
+                <div class="row text-center display-row-center">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-login ">
+                            INGRESAR
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div> 

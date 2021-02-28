@@ -1,0 +1,49 @@
+<section>
+
+
+</section>
+<!--- BLOG LIST ----->
+<section class=" " (window:resize)="onResize($event)">
+    <div class="col-sm-12 content-blog">
+        <div class="row no-margin justify-content-center">
+            <h3 class="no-padding">Nuevas publicaciónes</h3>
+        </div>
+        
+        <div class="col-sm-1">
+        </div>
+        <div class="row no-margin  pl-4 pr-4 b-none " >
+           
+            <div class="col-sm-3 ml-5 mr-5" *ngFor="let post of arrayPosts; let i= index">
+                <div class="card content-blog-card  mr-3 ml-3 b-none" style="width: 18rem;">
+                    <img class="card-img-top b-none" src="{{post.post_img}}" alt="Card image cap">
+                    <div class="card-body b-none">
+                        <span class="text-date">{{post.post_date}}</span>
+                        <h5 class="card-title">{{post.post_title}}</h5>
+                        <!-- <div class="container-text-post mt-4 row no-margin cursor-pointer card-text">
+                            <div [innerHTML]="post.post_description | slice:0:100"></div>
+                        </div> -->
+                        <hr>
+                        <div class="justify-content-end">
+                            <span (click)="viewMore(post.post_id)" class="">Ver más...</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="col-sm-1">
+                
+        </div>
+
+        <div class="row no-margin  display-row-center pr-4 pt-4 pb-4 text-center">
+            <span class="cursor-pointer  text-center text-more" [hidden]="hiddenButton" style="font-weight: bold;"
+                (click)="getMoreTree()">Cargar más
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        
+            </span>
+        </div>
+    </div>
+</section>
+

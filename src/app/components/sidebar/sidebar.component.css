@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype"),
+      url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+.sidebar li.active > a {
+    background-color:#864D7D !important;
+}
+
+.color {
+    color:#864D7D;
+}
+.title-side-bar{
+    font-size: 12px;
+    font-family: "Caviar Dreams";
+    padding-left: 5px;
+}

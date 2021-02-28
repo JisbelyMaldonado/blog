@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<section>
+    <!-- FIN IMG PRINCIPAL-->
+    <div class="row display-row-center no-margin" *ngIf="post">
+        <div class="col-12 text-center no-padding content-post-info pt-3 pb-3 pr-5 pl-5 ">
+            <h2 class="post-title">
+                {{post.post_title}}
+            </h2>
+            <h3 class="post-subtitle no-margin">
+                {{post.post_subtitle}}
+            </h3>
+            <div class="content-img-post mr-4 mb-2 ml-2" [ngStyle]="{'background-image': 'url('+post.post_img+')'}" hspace="20"
+                vspace="5"></div>
+
+            <div class="text-justify mt-2 container-text-post" [innerHTML]="post.post_description"></div>
+            <div class="display-flex-end  pb-2">
+                <span class="text-date">Publicado : {{post.post_date}} / {{ post.post_time}}</span>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <!-- <div class="div-container-share cursor-pointer " (click)="sharePost1()">
+                        <a href="https://inspirapmc.com/sharepost/{{post.post_id}}"></a>
+                </div>  -->
+               
+            </div>
+        </div>
+      
+    </div>
+    
+<!---------------  FOOTER   --------------------------->
+</section>
+
+
+<app-footer-landing-page></app-footer-landing-page>
+<!--------------- FIN FOOTER   --------------------------->

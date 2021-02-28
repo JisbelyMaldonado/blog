@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype"),
+      url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: "Made Tommy Personal";
+    src: url("../../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")
+        format("opentype"),
+      url("../../../assets/fonts/MADE-TOMMY-Thin-PERSONAL-USE.otf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+.no-margin {
+    margin-left: 0px;
+    margin-right: 0px ;
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.banner-blog-start{
+    background-image: url("../../../assets/img/Michelle-Coello-Blog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    min-height: 400px;
+}
+.content-img-post {
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 240px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left; 
+    width: 30%;
+    border-radius: 2px;
+}
+
+.display-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.container-text-post {
+    text-align: justify;
+    color: #333333;
+    line-height: 23px !important;
+    font-family: "Made Tommy Personal";
+    font-size: 16px;
+}
+
+.text-justify {
+    text-align: justify !important;
+  }
+.post-title {
+    font-family:"Caviar Dreams" ;
+    color: rgb(83, 83, 83);
+    margin: 0px;
+}
+.post-subtitle {
+    color: rgb(131,131,131);
+    font-family: "Made Tommy Personal";
+    margin:0px !important;
+    font-size: 20px;
+}
+.content-post-info {
+    background-color: #eae9e4;
+    opacity: 0.5;
+
+}
+
+.display-flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.text-date {
+    font-family:"Made Tommy Personal";
+    font-style: italic;
+    font-size: 12px;
+    color: #3a5257;
+
+}
+
+.div-container-share {
+  background-image: url('../../../assets/img/compartirFacebook.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px 25px;
+  height: 30px;
+  width: 100px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+  @media (max-width: 992px) {
+    .banner-blog-start{
+        background-size: 700px;
+    }
+}
+
+@media (max-width: 869px) {
+    .banner-blog-start{
+        background-size: 600px;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .banner-blog-start{
+        background-size: 500px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-blog-start{
+        background-size: 300px;
+        min-height: 200px;
+    }
+}

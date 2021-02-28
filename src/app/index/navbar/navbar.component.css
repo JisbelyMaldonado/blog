@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype"),
+      url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .logo-home {
+    padding-top: 10%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 6%;
+  }
+
+  .no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  /* .iconsSocial {
+    padding-top: 2%;
+  } */
+
+  .navbar-menu {
+    border-radius: none;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: none;
+  }
+
+  .nav-open .main-panel,
+  .wrapper-full-page,
+  .navbar .container .navbar-toggler,
+  .navbar .container .navbar-wrapper,
+  .navbar .container {
+    left: 0;
+    transform: translateX(0px) !important;
+    color: #182028;
+  }
+
+  .container-nav-bar {
+    min-width: 100%;
+    min-height: 32px;
+    max-height: 32px;
+    background-color: #D5D2C9;
+    font-family: "Caviar Dreams";
+    font-size: 15px;
+    justify-content: flex-end;
+    color: #182028;
+  }
+  .display-center-col {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .display-row-end {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-content: flex-end;
+  }
+  .socialnet {
+    width: 40px ;
+  }
+  .display-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+    .navbar-collapse {
+    height: auto !important;
+  }
+
+  .nav-link {
+    border-radius: 0px !important;
+  }
+
+  .cursor-pointer {
+    cursor:pointer;
+  }
+  .font{
+    color:#182028 !important;
+    font-family: "Caviar Dreams";
+
+  }
+  .div-content-bar-red {
+    background-color: #ababab;
+    min-height: 8px;
+  }
+  .no-margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .nav-open .main-panel,
+.wrapper-full-page,
+.navbar .container .navbar-toggler,
+.navbar .container .navbar-wrapper,
+.navbar .container {
+  left: 0;
+  transform: translateX(0px) !important;
+  color: #ffffff;
+}
+
+.navbar-collapse::after {
+  background-color: #D5D2C9;
+  font-family: "Caviar Dreams";
+}
+
+.nav-item-active {
+  background-color: #D5D2C9 ;
+  color: #182028;
+}
+.nav-item:active {
+  background-color: #D5D2C9;
+  color: #182028;
+  max-height: 32px;
+
+}
+
+.active {
+  background-color: #D5D2C9;
+  max-height: 32px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 10px;
+  line-height: 12px;
+}
+.navbar-toggler .icon-bar {
+  background-color: #ababab !important;
+}
+
+  @media (max-width: 576px) {
+    .socialnet {
+      padding-bottom: 10px ;
+    }
+    .iconsSocial {
+      justify-content: center;
+    }
+    .navbar-collapse {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 992px) {
+
+    .navbar-collapse {
+      margin-top: 30px;
+    }
+  }
+
+  .col-content-nav {
+    background-image: url('../../../assets/img/27363b.png');
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-position: center;
+    min-height: 500px;
+    min-width: 100%
+
+  }
+
+  .col-content-nav-router {
+    background-color: #D5D2C9;
+  }

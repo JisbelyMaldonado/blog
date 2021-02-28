@@ -1,0 +1,40 @@
+.display-row-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.display-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.display-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.modal-width {
+    min-width: 80%;
+}
+
+.img-post-modal {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.btn-copy {
+    background-color: #685989;
+} 

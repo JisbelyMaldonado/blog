@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+      format("opentype"),
+    url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.display-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.title-footer{
+  font-family: "Caviar Dreams";
+  color:white;
+}
+  
+.bb {
+    border: solid 1px white !important;
+  }
+  .row-w-100 {
+    min-width: 100%;
+  }
+  .row-w-80 {
+    max-width: 85%;
+  }
+  .logo-footer {
+    width: 180px;
+  }
+  .logo-footer-inspira {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .input-buscador {
+    background-color: #ffffff;
+    height: 3rem;
+    border-radius: 11px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "GOTHICB", "arial", sans-serif;
+  }
+  .img-buscador {
+    padding-left: 5px;
+    width: 3.3rem;
+  }
+  .sesion-footer {
+    /* margin-top: calc(8rem); */
+    padding-top: 4rem;
+    background: #f87481;
+    padding-bottom: 4rem;
+  }
+  
+  .text-footer {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .img-redes-footer {
+    width: 50px;
+  }
+  
+  .div-items-footer {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f6f6f6;
+    font-family: "DarwinPro-Regular", "arial", sans-serif !important;
+  }
+  
+  .gradient-footer {
+    height: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f6f6f6;
+  }
+  
+  .line-bg-gradient-contact {
+    background-image: linear-gradient(to right, #fc9449, #f72981, #ab29c4 86%);
+    margin-top: 4rem;
+  }
+  
+  .logo-nikola {
+    max-width: 10rem;
+  }
+  .logo-nikola1 {
+    max-width: 25rem;
+  }
+  .max-wh-row-100 {
+    max-width: 100%;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .row-w-100 {
+    min-width: 100%;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .line-footer {
+    max-width: 100%; margin: 0 auto; background-color:#5a3927;
+  }
+
+  .no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media (max-width: 576px) { 
+    .logo-footer-inspira {
+     
+      margin-left: 0px;
+    }
+  }

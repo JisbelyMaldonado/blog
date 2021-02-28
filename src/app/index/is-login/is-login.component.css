@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype"),
+      url("/../../assets/fonts/CaviarDreams_Bold.ttf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .display-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .display-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-form-modal {
+    max-width: 400px;
+    min-height: 430px;
+    background-color: rgb(246,246,246);
+    border-radius: 5px;
+  }
+  
+  .title-login {
+    color:  #864D7D;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Caviar Dreams";
+  }
+  
+  .form-content{
+    min-width: 300px;
+  }
+  .div-form{
+    min-width: 300px;
+  }
+  .input-form{
+    min-width: 280px;
+    border: 1px solid #7087AF;
+  }
+  .img-input{
+    width: 20px;
+    color: #685989 ;
+  }
+  
+  .text-password {
+    font-size: 10px;
+    color: rgba(96, 96, 96, .9);
+    font-family: "Caviar Dreams";
+  }
+  
+  .text-align-end {
+    text-align: end;
+  }
+  .title-login-with{
+    color: black;
+    font-size: 12px;
+    font-family:  "Caviar Dreams";
+  }
+  .btn-login {
+    background-color:  #685989;
+  }
+  .img-red-social-header {
+    max-width: 30px;
+    padding-right: 5px;
+  }
+  .no-margin {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .line {
+    background-color: #1bb3cc;
+    width: 65px;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .row-w-100 {
+    min-width: 100%;
+  }

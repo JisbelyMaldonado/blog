@@ -1,0 +1,53 @@
+<div class="row row-w-100 no-margin">
+  <div class="col-sm-12 no-padding ">
+    <div class="col-sm-12 no-padding">
+      <div class="row">
+        <div class="col-sm-12 no-padding col-content-nav-router">
+          <nav class=" navbar navbar-expand-lg navbar-light  navbar-menu" style="z-index: 1001;">
+            <div class="container container-nav-bar ">
+              <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon icon-bar font"></span>
+                <span class="navbar-toggler-icon icon-bar font"></span>
+                <span class="navbar-toggler-icon icon-bar font"></span>
+              </button>
+              <div class=" justify-content-end  collapse navbar-collapse" id="navigation" >
+                <ul id="ulCategories" class="navbar-nav" >
+                  <li (click)="isItemActive('QUIENES SOMOS', 'about')"
+                    class="nav-item  {{itemActive === 'QUIENES SOMOS' ? 'active' : ''}}">
+                    <a class="nav-link cursor-pointer font">Home</a>
+                  </li>
+                  <span class="font">|</span>
+                  <li (click)="isItemActive('SERVICIOS' , 'services')"
+                    class="nav-item {{itemActive === 'SERVICIOS' ? 'active' : ''}}">
+                    <a class="nav-link cursor-pointer font">Blog</a>
+                  </li>
+                  <span class="font">|</span>
+                  <li>
+                    <a class="font" href="https://www.facebook.com/Psic%C3%B3loga-Cl%C3%ADnica-Michelle-Coello-547050375645369" target="_blank">
+                      <span class="material-icons">
+                        facebook
+                        </span>
+                    </a>
+                  </li>
+               
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row no-margin  display-row-end  col-content-nav " (click)="openModalLogin()">
+       
+       
+      </div>
+    </div>
+   
+
+  </div>
+ 
+</div>
+
+<!-- <div class="col-sm-12 div-content-bar-red"></div> -->
+<app-is-login></app-is-login>
